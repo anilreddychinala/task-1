@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Factorial Calculator</h1>
+        
+        <!-- Input section -->
+        <label for="number">Enter a positive integer:</label>
+        <input type="text" id="number" placeholder="Enter a number">
+        
+        <!-- Buttons to calculate factorial -->
+        <button onclick="calculateFactorial('iterative')">Iterative Method</button>
+        <button onclick="calculateFactorial('recursive')">Recursive Method</button>
+        
+        <!-- Result section -->
+        <div id="result"></div>
+        <div id="error-message" style="color: red;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
